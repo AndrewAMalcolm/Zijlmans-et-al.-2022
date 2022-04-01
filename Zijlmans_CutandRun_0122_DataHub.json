@@ -1,0 +1,372 @@
+[
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Naive_UNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Naive_UNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Naive UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Naive_UNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Naive UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Naive_UNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive no UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Naive_noUNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive no UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Naive_noUNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Naive no UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Naive_noUNC_IgG.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "no UNC",
+	"modification": "IgG",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Primed_UNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Primed_UNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Primed_UNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Primed_UNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed no UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Primed_noUNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed no UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Primed_noUNC_H3K27me3.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed no UNC Replicate 1",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep1_Primed_noUNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "IgG",
+	"replicate": "1",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed no UNC Replicate 2",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Individual_Replicate_Tracks/Rep2_Primed_noUNC_IgG.normalized.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "IgG",
+	"replicate": "2",
+        "assay": "Cut&Run"
+        }
+}, 
+
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive UNC",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Naive_UNC_H3K27me3.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Naive no UNC",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Naive_noUNC_H3K27me3.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Naive no UNC ",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Naive_noUNC_IgG.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "no UNC",
+	"modification": "IgG",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Naive UNC ",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Naive_UNC_IgG.wu.bw",
+    "options": {
+        "color": "purple"
+    },
+    "metadata": {
+        "sample": "Naive",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed UNC",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Primed_UNC_H3K27me3.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "H3K27me3",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "H3K27me3 Primed no UNC",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Primed_noUNC_H3K27me3.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "H3K27me3",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed no UNC ",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Primed_noUNC_IgG.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "no UNC",
+	"modification": "IgG",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}, 
+
+{
+    "type": "bigwig",
+    "name": "IgG Primed UNC ",
+    "url": "http://ftp1.babraham.ac.uk/ftpusr79/WashU_bigwigs/Merged_For_Visualisation/Primed_UNC_IgG.wu.bw",
+    "options": {
+        "color": "green"
+    },
+    "metadata": {
+        "sample": "Primed",
+	"treatment": "UNC",
+	"modification": "IgG",
+	"replicate": "Merged",
+        "assay": "Cut&Run"
+        }
+}
+
+]
