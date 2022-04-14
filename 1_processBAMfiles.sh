@@ -1,6 +1,8 @@
 module load bedtools
 module load samtools
 
+#filter BAM file for quality
+
 for histName in $(ls *.bam);
 do
 ## Convert into bed file format
@@ -11,6 +13,7 @@ samtools view -h -q 20 ${histName} > ${name}.filt.bam
 
 done
 
+#extract fragment lenghts for QC
 
 module load samtools
 for hist in $(ls *.filt.bam);
@@ -26,7 +29,7 @@ bedtools bamtobed -i ${hist} -bedpe >${name}_bowtie2.bed
 ## Keep the read pairs that are on the same chromosome and fragment length less than 1000bp.
 awk '$1==$4 && $6-$2 < 1000 {print $0}' ${name}_bowtie2.bed >${name}_bowtie2.clean.bed
 
-## Only extract the fragment related columns
+## extract the fragment related columns
 cut -f 1,2,6 ${name}_bowtie2.clean.bed | sort -k1,1 -k2,2n -k3,3n  >${name}_bowtie2.fragments.bed
 
 
@@ -35,8 +38,6 @@ binLen=500
 awk -v w=$binLen '{print $1, int(($2 + $3)/(2*w))*w + w/2}' ${name}_bowtie2.fragments.bed | sort -k1,1V -k2,2n | uniq -c | awk -v OFS="\t" '{print $2, $3, $1}' |  sort -k1,1V -k2,2n  >${name}_bowtie2.fragmentsCount.bin$binLen.bed
 
  done
-
-
 
 mkdir BED
 mv *.bed BED
