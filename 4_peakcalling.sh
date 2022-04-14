@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# scale bed files by scaling factor
 module load samtools
 module load bedtools
 module load python
@@ -8,7 +7,8 @@ for histName in $(ls *_GRCh38_bowtie2.filt_bowtie2.fragments.bed);
 do
 
 
-## Convert into bed file format
+# scale bed files by scaling factor
+
 name=$(basename $histName _GRCh38_bowtie2.filt_bowtie2.fragments.bed)
 echo $name
 seqDepthDouble=`samtools view -F 0x04 ../../BDGP6/${name}_BDGP6_bowtie2.filt.bam | wc -l`
@@ -28,6 +28,8 @@ done
 module load R
 module load bedtools
 seacr=SEACR_1.3.sh
+
+#call peaks using all settings in SEACR with and without IgG
 
 for histName in $(ls *H3K27me3_bowtie2.fragments.normalized.bedGraph);
 do
