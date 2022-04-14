@@ -1,3 +1,6 @@
+#calculate and plot profiles from peak centred windows with 25kb genomic context
+#code adapted from Jan Oppelt (https://janbio.home.blog/2021/03/19/speed-up-deeptools-computematrix/)
+
 
 module load python
 positions=5000
