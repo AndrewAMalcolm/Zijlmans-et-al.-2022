@@ -1,3 +1,6 @@
+#calculate and plot profiles from peak centred windows with 25kb genomic context
+#code adapted from Jan Oppelt (https://janbio.home.blog/2021/03/19/speed-up-deeptools-computematrix/)
+
 module load python
 positions=5000
 threads=12
@@ -45,9 +48,6 @@ done
 # calculate matrix for each chunk
 for chunk in ref.chunks${rnd}*; do
 computeMatrix reference-point --referencePoint center -R ${chunk} -S Naive_noUNC_H3K27me3.bw Naive_UNC_H3K27me3.bw Primed_noUNC_H3K27me3.bw Primed_UNC_H3K27me3.bw Naive_noUNC_IgG.bw Naive_UNC_IgG.bw Primed_noUNC_IgG.bw Primed_UNC_IgG.bw -o ${chunk}.gz -b 25000 -a 25000 --sortUsingSamples 1 --missingDataAsZero -p max --verbose
-
-
-
 done
 
 # merge the chunks back to one file
@@ -72,9 +72,11 @@ done
 # merge the chunks back to one file
 computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_common_DESEQ2.matrix_25kb.gz && rm ref.chunks${rnd}*.gz
 
-plotHeatmap -m 080122_Naive_enriched-DESEQ2.matrix_25kb.gz -o 080122_Naive_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
-plotHeatmap -m 080122_Primed_enriched-DESEQ2.matrix_25kb.gz -o 080122_Primed_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
-plotHeatmap -m 080122_common_DESEQ2.matrix_25kb.gz -o 080122_common_DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
+
+#plot profiles 
+plotProfile -m 080122_Naive_enriched-DESEQ2.matrix_25kb.gz -o 080122_Naive_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
+plotProfile -m 080122_Primed_enriched-DESEQ2.matrix_25kb.gz -o 080122_Primed_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
+plotProfile -m 080122_common_DESEQ2.matrix_25kb.gz -o 080122_common_DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
 
 
 
