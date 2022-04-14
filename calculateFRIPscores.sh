@@ -1,3 +1,6 @@
+#Bash shell for iteratively running the python script frip_script.py
+
+
 FRIP=frip_script.py
 
 for histName in $(ls *H3K27me3_GRCh38_bowtie2.sorted.bam);
