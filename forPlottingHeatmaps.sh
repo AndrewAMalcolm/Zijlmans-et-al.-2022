@@ -1,4 +1,4 @@
-#calculate and plot profiles from peak centred windows with 25kb genomic context
+#calculate and plot heatmaps from peak centred windows with 10kb genomic context
 #code adapted from Jan Oppelt (https://janbio.home.blog/2021/03/19/speed-up-deeptools-computematrix/)
 
 module load python
@@ -28,7 +28,7 @@ computeMatrix reference-point --referencePoint center -R ${chunk} -S Naive_noUNC
 done
 
 # merge the chunks back to one file
-computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_Naive_enriched-DESEQ2.matrix_25kb.gz && rm ref.chunks${rnd}*.gz
+computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_Naive_enriched-DESEQ2.matrix_10kb.gz && rm ref.chunks${rnd}*.gz
 
 
 threads=12
@@ -51,7 +51,7 @@ computeMatrix reference-point --referencePoint center -R ${chunk} -S Naive_noUNC
 done
 
 # merge the chunks back to one file
-computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_Primed_enriched_DESEQ2_25kb.matrix.gz && rm ref.chunks${rnd}*.gz
+computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_Primed_enriched_DESEQ2_10kb.matrix.gz && rm ref.chunks${rnd}*.gz
 
 split -l $positions 080122_DESEQ2_common_peaks_filtered.bed ref.chunks${rnd}
 
@@ -70,13 +70,13 @@ computeMatrix reference-point --referencePoint center -R ${chunk} -S Naive_noUNC
 done
 
 # merge the chunks back to one file
-computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_common_DESEQ2.matrix_25kb.gz && rm ref.chunks${rnd}*.gz
+computeMatrixOperations rbind -m ref.chunks${rnd}*.gz -o 080122_common_DESEQ2.matrix_10kb.gz && rm ref.chunks${rnd}*.gz
 
 
-#plot profiles 
-plotProfile -m 080122_Naive_enriched-DESEQ2.matrix_25kb.gz -o 080122_Naive_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
-plotProfile -m 080122_Primed_enriched-DESEQ2.matrix_25kb.gz -o 080122_Primed_enriched-DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
-plotProfile -m 080122_common_DESEQ2.matrix_25kb.gz -o 080122_common_DESEQ2.matrix_25kb.pdf --yMin 0 --yMax 20 --perGroup
+#plot heatmaps
+plotHeatmap -m 080122_Naive_enriched-DESEQ2.matrix_10kb.gz -o 080122_Naive_enriched-DESEQ2.matrix_10kb.pdf --zMin 0 --zMax 20 --colorMap Purples Purples Greens Greens Purples Purples Greens Greens
+plotHeatmap -m 080122_Primed_enriched-DESEQ2.matrix_10kb.gz -o 080122_Primed_enriched-DESEQ2.matrix_10kb.pdf --zMin 0 --zMax 20 --colorMap Purples Purples Greens Greens Purples Purples Greens Greens
+plotHeatmap -m 080122_common_DESEQ2.matrix_10kb.gz -o 080122_common_DESEQ2.matrix_10kb.pdf --zMin 0 --zMax 20 --colorMap Purples Purples Greens Greens Purples Purples Greens Greens
 
 
 
