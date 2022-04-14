@@ -10,7 +10,10 @@ do
 name=$(basename $histName _GRCh38_bowtie2.sorted.bam)
 
 echo $name 
+
 #calculate scaling factor
+#4809036 - lowest read count of unique mapped Drosophila reads 
+
 seqDepthDouble=`samtools view -F 0x04 ../BDGP6/${name}_BDGP6_bowtie2.filt.bam | wc -l`
 seqDepth_B=$((seqDepthDouble/2))
 echo $seqDepth_B
